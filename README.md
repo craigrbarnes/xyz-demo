@@ -12,9 +12,9 @@ To download the data set, click on the Download button in the GeoJSON row. This 
 
 ## Upload the data to an XYZ Space using the CLI.
 
-If you don't already have a HERE Developer account and have used XYZ before, now would be a good time to sign up. It's free to get started with and doesn't require a credit card to sign up.
+If you don't already have a HERE Developer account and have used XYZ before, now would be a good time to [sign up](https://developer.here.com/). It's free to get started with and doesn't require a credit card to sign up.
 
-We'll be using the XYZ CLI to upload the data set to our XYZ Space. The CLI is great for uploading larger data sets.
+We'll be using the [XYZ CLI](https://www.here.xyz/cli/) to upload the data set to our XYZ Space. The CLI is great for uploading larger data sets.
 
 If you don't already have the CLI installed, be sure to install it from npm and then log in. If you already have the CLI installed on your machine, please skip this step.
 
@@ -56,10 +56,12 @@ touch index.html
 ```
 
 You'll also want to set up a local server, for example in Python 2.x:
+
 ```
 python -m SimpleHTTPServer 8888
 ```
 and in Python 3.x:
+
 ```
 python -m http.server 8888
 ```
@@ -152,7 +154,7 @@ map.addDataSource(xyzSpaceDataSource).then(() => {
    map.update();
 });
 ```
-map.addDataSource() returns a promise, so we'll wait until the data has been added to the map. Once it's been added to the map, we will style the data with the harp.gl styling specification.
+*map.addDataSource()* returns a promise, so we'll wait until the data has been added to the map. Once it's been added to the map, we will style the data with the harp.gl styling specification.
 
 ## Wrapping up
 In just a few easy steps, we've created a great looking map of the different wild and scenic rivers across the United States. A natural next step of this map might be to create a map legend so viewers of the map can understand what lengths the different colors correlate to.
